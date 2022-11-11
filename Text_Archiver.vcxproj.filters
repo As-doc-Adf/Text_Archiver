@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Main">
+      <UniqueIdentifier>{d6df4224-fdb7-4ba1-a900-6146a51e4da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Additional Huffman elements">
+      <UniqueIdentifier>{920f10cb-891d-4789-a749-d8fdeb6a9c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Huffman Framework">
+      <UniqueIdentifier>{611e5632-00b8-4c98-8309-56a2761d2274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Archiver Framework">
+      <UniqueIdentifier>{b6b40b04-0ee3-45bc-8dcf-ec013e2f7fa1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Исходные файлы\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PriorityQueue.cpp">
+      <Filter>Исходные файлы\Additional Huffman elements</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTree.cpp">
+      <Filter>Исходные файлы\Additional Huffman elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Исходные файлы\Additional Huffman elements</Filter>
+    </ClCompile>
+    <ClCompile Include="HuffmanTree.cpp">
+      <Filter>Исходные файлы\Huffman Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="PriorityQueue.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffmanTree.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
