@@ -105,6 +105,10 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +124,10 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +138,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="bitset.cpp" />
+    <ClCompile Include="EncodingDecoding.cpp" />
+    <ClCompile Include="File.cpp" />
     <ClCompile Include="HuffmanTree.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="PriorityQueue.cpp" />
@@ -137,11 +148,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="bitset.h" />
+    <ClInclude Include="EncodingDecoding.h" />
+    <ClInclude Include="File.h" />
     <ClInclude Include="HuffmanTree.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="PriorityQueue.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\boost.1.80.0\build\boost.targets" Condition="Exists('packages\boost.1.80.0\build\boost.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\boost.1.80.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost.1.80.0\build\boost.targets'))" />
+  </Target>
 </Project>

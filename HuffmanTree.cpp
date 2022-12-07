@@ -4,9 +4,10 @@
 HuffmanTree::HuffmanTree(const std::map<char, std::uint64_t>& elements):Elements(elements)
 {
 	if (Elements.empty()) {
-		std::cout << "HuffmanTree[Warning]:Map is empty, possible error !" << std::endl;
+		std::clog << "HuffmanTree[Warning]:Map is empty, possible error !" << std::endl;
 	}
 	huffmanTree = GetHuffmanTree();
+	createTable(huffmanTree.getRoot(), "");
 }
 
 BinaryTree HuffmanTree::GetHuffmanTree()
@@ -35,13 +36,22 @@ BinaryTree HuffmanTree::GetHuffmanTree()
 			BinaryTree mainTree(newNode);
 			pq.insert(mainTree);	
 	}
-
 	return BinaryTree();
+}
+
+void HuffmanTree::createTable(std::shared_ptr<Node> root,std::string _code)
+{
+
+		if (auto leftNode = root->getLeftNode(); leftNode) { createTable(leftNode, _code + "0"); }
+		if (auto rightNode = root->getRightNode(); rightNode) { createTable(rightNode, _code + "1");}
+		else {
+		Table.insert(std::make_pair(root->getSymbol(), _code));
+	}
 }
 
 std::map<char, std::string> HuffmanTree::getTable()
 {
-	return std::map<char, std::string>();
+	return Table;
 
 }
 

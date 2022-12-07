@@ -11,7 +11,10 @@ public:
 	
 
 private:
+	
+	void createTable(std::shared_ptr<Node>,std::string);
 	BinaryTree GetHuffmanTree();
 	BinaryTree huffmanTree;
+	std::map<char, std::string> Table;
 	const std::map<char, std::uint64_t> Elements;
 };

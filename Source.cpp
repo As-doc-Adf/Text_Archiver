@@ -1,5 +1,8 @@
 #include"HuffmanTree.h"
-
+#include"File.h"
+#include<iostream>
+#include<string>
+#include"bitset.h"
 int main() {
 
 	std::map<char, std::uint64_t> elm;
@@ -14,6 +17,13 @@ int main() {
 	elm.insert(std::pair<char, std::uint64_t>('\n', 1));
 
 	HuffmanTree tree(elm);
+	//for (const auto& [symbol, code] : tree.getTable()) {
+	//	std::cout << symbol << ' ' << code << std::endl;
+	//}
+
+	File fl("file.txt");
+	std::string str = { std::string("11101000111101") };
+	fl.writeBinary(str);
 
 	return 0;
 }

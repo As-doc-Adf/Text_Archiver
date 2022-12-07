@@ -16,11 +16,11 @@ void Node::addChild(std::shared_ptr<Node> newNode) {
 	this->frequance += newNode.get()->getFrequance();
 }
 
-inline std::shared_ptr<Node> Node::getLeftNode() {
+ std::shared_ptr<Node> Node::getLeftNode() {
 	return this->leftNode;
 }
 
-inline std::shared_ptr<Node> Node::getRightNode()
+ std::shared_ptr<Node> Node::getRightNode()
 {
 	return this->rightNode;
 }
@@ -34,7 +34,7 @@ char Node::getSymbol()
 	return this->symbol;
 }
 
-inline bool Node::isLeaf()
+bool Node::isLeaf()
 {
 	return leftNode && rightNode;
 }

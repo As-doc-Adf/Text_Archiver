@@ -14,8 +14,8 @@ public:
 	Node():frequance(0),symbol(0) {}
 	Node(std::uint64_t _frequance, char _symbol) :frequance(_frequance), symbol(_symbol) {}
 
-	inline std::shared_ptr<Node> getLeftNode();
-	inline std::shared_ptr<Node> getRightNode();
+	 std::shared_ptr<Node> getLeftNode();
+	 std::shared_ptr<Node> getRightNode();
 	inline std::uint64_t getFrequance();
 	 char getSymbol();
 	 bool isLeaf();

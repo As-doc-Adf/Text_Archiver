@@ -42,6 +42,15 @@
     <ClCompile Include="HuffmanTree.cpp">
       <Filter>Исходные файлы\Huffman Framework</Filter>
     </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Исходные файлы\Huffman Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="EncodingDecoding.cpp">
+      <Filter>Исходные файлы\Huffman Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="bitset.cpp">
+      <Filter>Исходные файлы\Additional Huffman elements</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h">
@@ -56,5 +65,17 @@
     <ClInclude Include="HuffmanTree.h">
       <Filter>Файлы заголовков\Archiver Framework</Filter>
     </ClInclude>
+    <ClInclude Include="EncodingDecoding.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="bitset.h">
+      <Filter>Файлы заголовков\Archiver Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
