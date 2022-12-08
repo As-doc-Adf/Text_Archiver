@@ -42,10 +42,7 @@
     <ClCompile Include="HuffmanTree.cpp">
       <Filter>Исходные файлы\Huffman Framework</Filter>
     </ClCompile>
-    <ClCompile Include="File.cpp">
-      <Filter>Исходные файлы\Huffman Framework</Filter>
-    </ClCompile>
-    <ClCompile Include="EncodingDecoding.cpp">
+    <ClCompile Include="EndoingDecoding.cpp">
       <Filter>Исходные файлы\Huffman Framework</Filter>
     </ClCompile>
     <ClCompile Include="bitset.cpp">
@@ -65,10 +62,7 @@
     <ClInclude Include="HuffmanTree.h">
       <Filter>Файлы заголовков\Archiver Framework</Filter>
     </ClInclude>
-    <ClInclude Include="EncodingDecoding.h">
-      <Filter>Файлы заголовков\Archiver Framework</Filter>
-    </ClInclude>
-    <ClInclude Include="File.h">
+    <ClInclude Include="EndoingDecoding.h">
       <Filter>Файлы заголовков\Archiver Framework</Filter>
     </ClInclude>
     <ClInclude Include="bitset.h">

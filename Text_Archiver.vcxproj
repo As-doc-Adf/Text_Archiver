@@ -139,8 +139,7 @@
   <ItemGroup>
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="bitset.cpp" />
-    <ClCompile Include="EncodingDecoding.cpp" />
-    <ClCompile Include="File.cpp" />
+    <ClCompile Include="EndoingDecoding.cpp" />
     <ClCompile Include="HuffmanTree.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="PriorityQueue.cpp" />
@@ -149,8 +148,7 @@
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="bitset.h" />
-    <ClInclude Include="EncodingDecoding.h" />
-    <ClInclude Include="File.h" />
+    <ClInclude Include="EndoingDecoding.h" />
     <ClInclude Include="HuffmanTree.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="PriorityQueue.h" />

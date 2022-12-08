@@ -1,5 +1,5 @@
 #include"bitset.h"
-std::pair<unsigned char*, size_t> Bitset::getBitset()
+const std::pair<unsigned char*, size_t> Bitset::getBitset()
 {
 	return std::make_pair(mybitset,bitset_size);
 }
@@ -51,7 +51,7 @@ Bitset::Bitset(std::string str):original(str)
 
 Bitset::~Bitset(){}
 
-std::string Bitset::getOriginal()
+const std::string Bitset::getOriginal()
 {
 	return original;
 }

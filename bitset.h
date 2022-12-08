@@ -8,8 +8,8 @@ public:
 	Bitset(std::string);
 	~Bitset();
 
-	std::string getOriginal();
-	std::pair<unsigned char*, size_t> getBitset();
+	const std::string getOriginal();
+	const std::pair<unsigned char*, size_t> getBitset();
 
 private:
 	void makeBitset();
