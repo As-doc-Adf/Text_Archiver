@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/packages
+/dynamic_bitset-develop
+/.vs
